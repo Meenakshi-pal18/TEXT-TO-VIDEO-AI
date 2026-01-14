@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text-to-Video AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Text-to-Video AI</h1>
+    <p>Enter a prompt to generate a short video</p>
+    <textarea id="prompt" placeholder="Type your prompt here..."></textarea>
+    <div class="controls">
+      <select id="style">
+        <option value="cinematic">Cinematic</option>
+        <option value="anime">Anime</option>
+        <option value="realistic">Realistic</option>
+      </select>
+      <button id="generate">Generate</button>
+    </div>
+    <div id="loader"></div>
+    <video id="video" controls></video>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
